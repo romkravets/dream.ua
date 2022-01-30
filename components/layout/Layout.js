@@ -1,11 +1,11 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import {data} from "../../constants/data";
 
-export default function Layout({ children, ...customMeta }) {
-  const router = useRouter();
-
+export default function Layout({children, ...customMeta }) {
+  
+  console.log(data, 'data');
   const meta = {
     title: "",
     description: ``,
